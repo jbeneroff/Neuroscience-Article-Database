@@ -8,7 +8,7 @@
 
 ## Project Description
 
-NeuroLog is a react build which shows users a database of neuroscience-related research articles. Users will be able to view current research, add new articles, and delete them. As a PMVP I will add a second Airtable with a popular news geared towards less science-iclined users and possibly an external API with a larger databse of journal articles.
+NeuroLog is a react build which shows users a database of neuroscience-related research articles. Users will be able to view current research, add new articles, and delete them. As a PMVP I will add a second Airtable with a popular news geared towards less science-inclined users, possibly an external API with a larger databse of journal articles, and a voting system for the article list page.
 
 ## Wireframes
 
@@ -49,6 +49,7 @@ NeuroLog is a react build which shows users a database of neuroscience-related r
 
 - Add second Airtable with news
 - Add external API with large database of journal articles
+- Add voting system for article list page
 - Make it look really good
 
 ## Project Schedule
@@ -78,11 +79,13 @@ This schedule will be used to keep track of your progress throughout the week an
 | Article Details Component | H | 3hrs|  |  |
 | Forms | H | 3hrs|  |  |
 | Delete Function | H | 1hrs|  |  |
+| Debugging | H | 4hrs|  |  |
 | Basic CSS Component Styling | H | 3hrs|  |  |
 | Advanced CSS Styling | H | 6hrs|  |  |
+| Voting System | M | 3hrs|  |  |
 | PMVP: Adding Second Airtable w/ Component| M | 3hrs|  |  |
 | PMVP: Adding External API w/ Component | M | 3hrs|  |  |
-| Total | H | 34hrs|  |  |
+| Total | H | 41rs|  |  |
 
 ## SWOT Analysis
 
