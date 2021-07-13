@@ -4,7 +4,7 @@
 
 ## NeuroLog
 
-[NeuroLog Website](URL)
+[NeuroLog Website](Deployed URL)
 
 ## Project Description
 
@@ -15,7 +15,7 @@ NeuroLog is a react build which shows users a database of neuroscience-related r
 [Wireframe](https://wireframe.cc/IsDCjP)
 
 ## Component Hierarchy
-[Component Hieratchy](https://whimsical.com/p2-component-hiearchy-6mJuAWPjFT3EJXG5tZDDkM)
+[Component Hierarchy](https://whimsical.com/p2-component-hiearchy-6mJuAWPjFT3EJXG5tZDDkM)
 
 ## API and Data Sample
 
