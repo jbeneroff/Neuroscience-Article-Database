@@ -19,46 +19,23 @@ NeuroLog is a react build which shows users a database of neuroscience-related r
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
-
 ```json
 {
     "records": [
         {
-            "id": "recONRzIUTuZ5lXaF",
+            "id": "rec7kT0rP7c73rhg9",
             "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
+                "title": "Hippocampal sequencing mechanisms are disrupted in a maternal immune activation model of schizophrenia risk",
+                "authors": "Lucinda J. Speers, Kirsten R. Cheyne, Elena Cavani, Tara Hayward, Robert Schmidt and David K. Bilkey",
+                "abstract": "Episodic memory requires information to be stored and recalled in sequential order, and these processes are disrupted in schizophrenia. Hippocampal ph...",
+                "link": "https://www.jneurosci.org/content/early/2021/07/12/JNEUROSCI.0730-21.2021"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        },
-        {
-            "id": "rec3oYZ5Tp0AIDsKe",
-            "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
-        },
-        {
-            "id": "recA34tOaoE1IVeC1",
-            "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
-            },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-07-13T17:14:58.000Z"
         }
     ],
-    "offset": "recA34tOaoE1IVeC1"
+    "offset": "rec7kT0rP7c73rhg9"
 }
 ```
-
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MVP and PostMVP.  Carefully decide what is placed into your MVP, as the client will expect this functionality to be implemented upon project completion.  
 
 #### MVP 
 
@@ -109,10 +86,10 @@ This schedule will be used to keep track of your progress throughout the week an
 
 ## SWOT Analysis
 
-### Strengths:
+### Strengths: I have a good understanding of react apps and components. I also have several similar builds from labs that I can review.
 
-### Weaknesses:
+### Weaknesses: I sometimes have trouble with mapping through the APIs. 
 
-### Opportunities:
+### Opportunities: I am excited to show off my skill in building react apps, using Airtable, and designing a great looking app.
 
-### Threats:
+### Threats: I'll sometimes get stuck spending too much time on CSS styling. Or get stuck on something not functioning and then come back later to realize it was just a tiny typo.
