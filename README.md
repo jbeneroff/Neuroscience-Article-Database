@@ -4,7 +4,7 @@
 
 ## NeuroLog
 
-[NeuroLog Website](Deployed URL)
+[NeuroLog Website](URL)
 
 ## Project Description
 
