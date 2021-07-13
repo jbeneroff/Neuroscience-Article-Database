@@ -39,10 +39,10 @@ NeuroLog is a react build which shows users a database of neuroscience-related r
 
 #### MVP 
 
--Home page with navigation bar to article list and add an article pages.
--Get and render articles from Airtable.
--Use forms to add articles and update Airtable.
--Delete articles from the Airtable.
+- Home page with navigation bar to article list and add an article pages.
+- Get and render articles from Airtable.
+- Use forms to add articles and update Airtable.
+- Delete articles from the Airtable.
 
 
 #### PostMVP  
