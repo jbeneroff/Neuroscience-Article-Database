@@ -8,11 +8,11 @@
 
 ## Project Description
 
-NeuroLog is a react build which shows users a database of neuroscience-related news and journal articles. 
+NeuroLog is a react build which shows users a database of neuroscience-related research articles. Users will be able to view current research, add new articles, and delete them. As a PMVP I will add a second Airtable with a popular news geared towards less science-iclined users and possibly an external API with a larger databse of journal articles.
 
 ## Wireframes
 
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
+[Wireframe](https://wireframe.cc/IsDCjP)
 
 ## Component Hierarchy
 Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
