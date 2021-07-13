@@ -3,8 +3,11 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BASE_URL, headers } from '../services'
 import Loader from './Loader'
+import ArticleDetail from './ArticleDetail'
+import ArticleCard from './ArticleCard'
+import { Link } from 'react-router-dom'
 
-export default function ArticleList() {
+export default function ArticleList(article) {
   const [articles, setArticles] = useState([])
 
   useEffect(() => {
@@ -21,15 +24,12 @@ export default function ArticleList() {
   // Loading View
   // if (albums.length === 0) {
   //   return <Loader />
-  // }
 
   // Display List
   return (
     <div>
       {articles.map(article => {
-        return(
-          <h3>{article.fields.title}</h3>
-        )
+        return <ArticleCard article={article} />
         })}
     </div>
   )
