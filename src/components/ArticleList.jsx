@@ -17,9 +17,9 @@ export default function ArticleList(article) {
     fetchArticles()
   }, [])
 
-  // Loading View
-  // if (albums.length === 0) {
-  //   return <Loader />
+  if (articles.length === 0) {
+    return <Loader />
+  }
 
   return (
     <div>

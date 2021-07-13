@@ -22,8 +22,12 @@ export default function ArticleDetail() {
 
   const handleDelete = async () => {
     const URL = `${BASE_URL}/${id}`
-    const res = await axios.delete(URL, {headers})
+    await axios.delete(URL, {headers})
     history.push('/all-articles')
+  }
+
+  if (!article.fields) {
+    return <Loader />
   }
 
   return (
