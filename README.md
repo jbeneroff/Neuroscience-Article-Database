@@ -15,7 +15,7 @@ NeuroLog is a react build which shows users a database of neuroscience-related r
 [Wireframe](https://wireframe.cc/IsDCjP)
 
 ## Component Hierarchy
-Show your component hierarchy here! Use [this](https://cms-assets.tutsplus.com/uploads/users/1795/posts/30352/image/GettingStartedWithReduxTutorial-React-Component-Structure.png) as an example.
+[Component Hieratchy](https://whimsical.com/p2-component-hiearchy-6mJuAWPjFT3EJXG5tZDDkM)
 
 ## API and Data Sample
 
