@@ -5,7 +5,6 @@
 ## NeuroLog
 
 [NeuroLog Website](URL)
-asda
 
 ## Project Description
 
