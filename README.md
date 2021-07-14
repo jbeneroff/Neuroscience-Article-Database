@@ -8,7 +8,7 @@
 
 ## Project Description
 
-NeuroLog is a react build which shows users a database of neuroscience-related research articles. Users will be able to view current research, add new articles, and delete them. As a PMVP I will add a second Airtable with a popular news geared towards less science-inclined users, possibly an external API with a larger databse of journal articles, and a voting system for the article list page.
+NeuroLog is a react build which shows users a database of neuroscience-related research articles. Users will be able to view current research, add new articles, and delete them. It will have a second Airtable with a popular news geared towards less science-inclined users. As a PMVP I will possibly add an external API with a larger databse of journal articles, a voting system for the article list page, and the delete button will also require a password.
 
 ## Wireframes
 
@@ -44,12 +44,12 @@ NeuroLog is a react build which shows users a database of neuroscience-related r
 - Get and render articles from Airtable.
 - Use forms to add articles and update Airtable.
 - Delete articles from the Airtable.
+- Add second Airtable with news
 
 #### PostMVP
 
 - Requiring a password to delete articles
 - Search article list function
-- Add second Airtable with news
 - Add external API with large database of journal articles
 - Add voting system for article list page
 - Make it look really good
@@ -60,9 +60,9 @@ This schedule will be used to keep track of your progress throughout the week an
 
 | Day        | Deliverable                                        | Status     |
 | ---------- | -------------------------------------------------- | ---------- |
-| July 12    | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| July 13    | Project Approval                                   | Incomplete |
-| July 14    | Core Application Structure / Code                  | Incomplete |
+| July 12    | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
+| July 13    | Project Approval                                   | Complete   |
+| July 14    | Core Application Structure / Code                  | Complete   |
 | July 14    | Initial Clickable Model / MVP                      | Incomplete |
 | July 15    | MVP                                                | Incomplete |
 | July 16    | MVP / PMVP                                         | Incomplete |
@@ -71,23 +71,23 @@ This schedule will be used to keep track of your progress throughout the week an
 
 ## Timeframes
 
-| Component                                 | Priority | Estimated Time | Time Invested | Actual Time |
-| ----------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project Proposal and Approval             |    H     |      3hrs      |               |             |
-| Building Airtable Elements                |    H     |      2hrs      |               |             |
-| Basic React App Structure                 |    H     |      3hrs      |               |             |
-| Navbar                                    |    H     |      1hrs      |               |             |
-| Article List Component                    |    H     |      3hrs      |               |             |
-| Article Details Component                 |    H     |      3hrs      |               |             |
-| Forms                                     |    H     |      3hrs      |               |             |
-| Delete Function                           |    H     |      1hrs      |               |             |
-| Debugging                                 |    H     |      4hrs      |               |             |
-| Basic CSS Component Styling               |    H     |      3hrs      |               |             |
-| Advanced CSS Styling                      |    H     |      6hrs      |               |             |
-| Voting System                             |    M     |      3hrs      |               |             |
-| PMVP: Adding Second Airtable w/ Component |    M     |      3hrs      |               |             |
-| PMVP: Adding External API w/ Component    |    M     |      3hrs      |               |             |
-| Total                                     |    H     |      41rs      |               |             |
+| Component                              | Priority | Estimated Time | Time Invested | Actual Time |
+| -------------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Project Proposal and Approval          |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Building Airtable Elements             |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Basic React App Structure              |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Navbar                                 |    H     |      1hrs      |     1hrs      |    1hrs     |
+| Article List Component                 |    H     |      3hrs      |     1hrs      |    1hrs     |
+| Article Details Component              |    H     |      3hrs      |     1hrs      |    1hrs     |
+| Forms                                  |    H     |      3hrs      |     1hrs      |    1hrs     |
+| Delete Function                        |    H     |      1hrs      |     1hrs      |    1hrs     |
+| Debugging                              |    H     |      4hrs      |     1hrs      |    1hrs     |
+| Basic CSS Component Styling            |    H     |      3hrs      |               |             |
+| Advanced CSS Styling                   |    H     |      6hrs      |               |             |
+| Adding Second Airtable w/ Component    |    H     |      3hrs      |     1hrs      |    1hrs     |
+| PMVP: Voting System                    |    M     |      3hrs      |               |             |
+| PMVP: Adding External API w/ Component |    M     |      3hrs      |               |             |
+| Total                                  |    H     |      41rs      |               |             |
 
 ## SWOT Analysis
 
