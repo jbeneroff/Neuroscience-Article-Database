@@ -34,7 +34,7 @@ export default function NewsDetail() {
   }
 
   return (
-    <div>
+    <div className='info'>
       <h2 id='title'>{news.fields?.title}</h2>
       <p id='abstract'>{news.fields?.abstract}</p>
       <a href={news.fields?.link} id='read-more'>Link to Article</a>

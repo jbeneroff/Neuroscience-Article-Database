@@ -32,7 +32,7 @@ export default function ArticleDetail() {
   }
 
   return (
-    <div>
+    <div className='info'>
       <h2 id='title'>{article.fields?.title}</h2>
       <h3 id='authors'>{article.fields?.authors}</h3>
       <p id='abstract'>{article.fields?.abstract}</p>

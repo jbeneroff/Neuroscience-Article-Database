@@ -32,7 +32,7 @@ export default function NewArticle() {
   }
 
   return (
-    <div>
+    <div className='add'>
       <h3>Add a New Article</h3>
       <form onSubmit={handleSubmit}>
         <label>Title</label>
@@ -43,7 +43,7 @@ export default function NewArticle() {
         <input name="abstract" value={input.abstract} onChange={handleChange} />
         <label>Link</label>
         <input name="link" value={input.link} onChange={handleChange} />
-        <button>Add Article</button>
+        <button id='add-button'>Add Article</button>
       </form>
     </div>
   )

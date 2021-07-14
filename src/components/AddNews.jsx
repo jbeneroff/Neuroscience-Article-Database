@@ -32,7 +32,7 @@ export default function AddNews() {
   }
 
   return (
-    <div>
+    <div className='add'>
       <h3>Add a News Article</h3>
       <form onSubmit={handleSubmit}>
         <label>Title</label>

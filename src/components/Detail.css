@@ -1,3 +1,8 @@
+.info {
+  background-color: rgba(49, 49, 121, 0.564);
+  border-radius: 10px;
+}
+
 #title {
   margin: 7px 5px;
   color: aliceblue;

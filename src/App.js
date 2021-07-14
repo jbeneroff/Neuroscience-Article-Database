@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App" id={darkMode ? "dark" : "light"}>
       <Navbar />
-      <button id='mode-button' onClick={changeMode}>Change Mode</button>
+      <button id='mode-button' onClick={changeMode}>Change Theme</button>
       <Route exact path='/'>
         <HomePage />
       </Route>
@@ -44,10 +44,7 @@ function App() {
       <Route path='/new-news'>
         <AddNews />
       </Route>
-      <div>
-        
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }
