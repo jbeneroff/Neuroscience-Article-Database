@@ -32,7 +32,7 @@ export default function NewsList() {
           })}
       </div>
       <button className='button'>
-        <Link to='/new-news' className='add-button' >Add an News Article</Link>
+        <Link to='/new-news' className='add-button' >Add a News Article</Link>
       </button>
     </div>
   )

@@ -15,20 +15,28 @@
 }
 
 .dark-header {
+  display: flex;
   color: aliceblue;
-  margin: 15px;
+  margin: 10px;
   text-decoration: underline;
+  align-items: flex-start;
 }
 
 .light-header {
+  display: flex;
   color: rgba(49, 49, 121, 1);
-  margin: 15px;
+  margin: 10px;
   text-decoration: underline;
+  align-items: flex-start;
 }
 
 @media only screen and (min-width: 768px) {
-  #header {
-    font-size: x-large;
-    font-weight: bolder;
+  .light-header,
+  .dark-header {
+    font-size: 50px;
+    /* font-weight: bolder; */
+  }
+  .nav-item {
+    font-size: 25px;
   }
 }
