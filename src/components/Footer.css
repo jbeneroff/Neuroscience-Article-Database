@@ -3,7 +3,11 @@
 }
 a {
   text-decoration: none;
-  color: black;
+  color: aliceblue;
+  transition: 0.4s;
+}
+a:hover {
+  color: rgb(77, 77, 249);
 }
 .footer {
   width: 100%;
@@ -14,4 +18,14 @@ a {
   flex-direction: column;
   position: fixed;
   bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  a {
+    font-size: larger;
+    font-weight: bolder;
+  }
+  #footer {
+    font-size: larger;
+  }
 }

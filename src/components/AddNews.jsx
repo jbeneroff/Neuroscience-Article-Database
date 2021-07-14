@@ -2,6 +2,7 @@ import { useState } from "react"
 import axios from "axios"
 import { headers } from "../services"
 import { useHistory } from 'react-router'
+import './Add.css'
 
 const BASE_URL = `https://api.airtable.com/v0/appXNlhVJ6AfbKMdN/news`
 
@@ -35,18 +36,12 @@ export default function AddNews() {
       <h3>Add a News Article</h3>
       <form onSubmit={handleSubmit}>
         <label>Title</label>
-        <br />
-        <input name="title" value={input.title} onChange={handleChange} placeholder="Title" />
-        <br />
+        <input name="title" value={input.title} onChange={handleChange} />
         <label>Abstract</label>
-        <br />
-        <input name="abstract" value={input.abstract} onChange={handleChange} placeholder="Abstract" />
-        <br />
+        <input name="abstract" value={input.abstract} onChange={handleChange} />
         <label>Link</label>
-        <br />
-        <input name="link" value={input.link} onChange={handleChange} placeholder="URL" />
-        <br />
-        <button>Add News Article</button>
+        <input name="link" value={input.link} onChange={handleChange} />
+        <button id='add-button'>Add News Article</button>
       </form>
     </div>
   )

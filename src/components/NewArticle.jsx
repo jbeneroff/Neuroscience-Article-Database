@@ -2,6 +2,8 @@ import { useState } from "react"
 import axios from "axios"
 import { BASE_URL, headers } from "../services"
 import { useHistory } from 'react-router'
+import './Add.css'
+
 
 const defaultForm = {
   title: "",
@@ -34,22 +36,13 @@ export default function NewArticle() {
       <h3>Add a New Article</h3>
       <form onSubmit={handleSubmit}>
         <label>Title</label>
-        <br />
-        <input name="title" value={input.title} onChange={handleChange} placeholder="Title" />
-        <br />
+        <input name="title" value={input.title} onChange={handleChange} />
         <label>Authors</label>
-        <br />
-        <input name="authors" value={input.authors} onChange={handleChange} placeholder="Authors" />
-        <br />
+        <input name="authors" value={input.authors} onChange={handleChange} />
         <label>Abstract</label>
-        <br />
-        <input name="abstract" value={input.abstract} onChange={handleChange} placeholder="Abstract" />
-        <br />
+        <input name="abstract" value={input.abstract} onChange={handleChange} />
         <label>Link</label>
-        <br />
-        <input name="link" value={input.link} onChange={handleChange} placeholder="URL" />
-        
-        <br />
+        <input name="link" value={input.link} onChange={handleChange} />
         <button>Add Article</button>
       </form>
     </div>

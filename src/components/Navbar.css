@@ -7,11 +7,11 @@
 }
 .nav-item {
   text-decoration: none;
-  color: black;
+  color: white;
   transition: 0.4s;
 }
 .nav-item:hover {
-  color: white;
+  color: rgb(77, 77, 249);
 }
 #header {
   color: aliceblue;
@@ -21,6 +21,7 @@
 
 @media only screen and (min-width: 768px) {
   #header {
-    font-size: larger;
+    font-size: x-large;
+    font-weight: bolder;
   }
 }

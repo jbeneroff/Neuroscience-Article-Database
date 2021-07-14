@@ -26,14 +26,14 @@ export default function NewsList() {
 
   return (
     <div>
-      <button className='button'>
-        <Link to='/new-news' className='add-button' >Add an News Article</Link>
-      </button>
-      <div>
+      <div id='list-div'>
         {news.map((news, key) => {
           return <NewsCard key={news.id} news={news} />
           })}
       </div>
+      <button className='button'>
+        <Link to='/new-news' className='add-button' >Add an News Article</Link>
+      </button>
     </div>
   )
 }
