@@ -5,6 +5,9 @@ import HomePage from './components/HomePage';
 import ArticleList from './components/ArticleList';
 import ArticleDetail from './components/ArticleDetail';
 import NewArticle from './components/NewArticle';
+import NewsList from './components/NewsList'
+import NewsDetail from './components/NewsDetail'
+import AddNews from './components/AddNews';
 import './App.css';
 
 function App() {
@@ -22,6 +25,15 @@ function App() {
       </Route>
       <Route path='/new-article'>
         <NewArticle />
+      </Route>
+      <Route path='/all-news'>
+        <NewsList />
+      </Route>
+      <Route path='/news/:id'>
+        <NewsDetail />
+      </Route>
+      <Route path='/new-news'>
+        <AddNews />
       </Route>
       <Footer />
     </div>

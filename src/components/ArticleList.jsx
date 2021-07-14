@@ -4,6 +4,7 @@ import axios from 'axios'
 import { BASE_URL, headers } from '../services'
 import Loader from './Loader'
 import ArticleCard from './ArticleCard'
+import { Link } from 'react-router-dom'
 
 export default function ArticleList(article) {
   const [articles, setArticles] = useState([])
@@ -12,7 +13,6 @@ export default function ArticleList(article) {
     const fetchArticles = async () => {
       const res = await axios.get(BASE_URL, { headers })
       setArticles(res.data.records)
-      console.log(res.data.records)
     }
     fetchArticles()
   }, [])
@@ -23,9 +23,14 @@ export default function ArticleList(article) {
 
   return (
     <div>
-      {articles.map((article, key) => {
-        return <ArticleCard key={article.id} article={article} />
-        })}
+      <div>
+        <Link to='/new-article'>Add an Journal Article</Link>
+      </div>
+      <div>
+        {articles.map((article, key) => {
+          return <ArticleCard key={article.id} article={article} />
+          })}
+        </div>
     </div>
   )
 }
