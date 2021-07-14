@@ -1,4 +1,5 @@
 import { Route } from 'react-router-dom'
+import React, { Component, useState } from "react";
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './components/HomePage';
@@ -11,9 +12,17 @@ import AddNews from './components/AddNews';
 import './App.css';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(true)
+
+  function changeMode() {
+    setDarkMode((prevState => !prevState))
+  }
+
+
   return (
-    <div className="App">
+    <div className="App" id={darkMode ? "dark" : "light"}>
       <Navbar />
+      <button id='mode-button' onClick={changeMode}>Change Mode</button>
       <Route exact path='/'>
         <HomePage />
       </Route>
@@ -35,7 +44,10 @@ function App() {
       <Route path='/new-news'>
         <AddNews />
       </Route>
-      <Footer />
+      <div>
+        
+        <Footer />
+      </div>
     </div>
   );
 }
