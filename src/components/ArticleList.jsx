@@ -5,6 +5,7 @@ import { BASE_URL, headers } from '../services'
 import Loader from './Loader'
 import ArticleCard from './ArticleCard'
 import { Link } from 'react-router-dom'
+import './List.css'
 
 export default function ArticleList(article) {
   const [articles, setArticles] = useState([])
@@ -24,7 +25,7 @@ export default function ArticleList(article) {
   return (
     <div>
       <div>
-        <Link to='/new-article'>Add an Journal Article</Link>
+        <Link to='/new-article' className='add-button' >Add a Journal Article</Link>
       </div>
       <div>
         {articles.map((article, key) => {

@@ -5,6 +5,7 @@ import { headers } from '../services'
 import Loader from './Loader'
 import NewsCard from './NewsCard'
 import { Link } from 'react-router-dom'
+import './List.css'
 
 const BASE_URL = `https://api.airtable.com/v0/appXNlhVJ6AfbKMdN/news`
 
@@ -26,7 +27,7 @@ export default function NewsList() {
   return (
     <div>
       <div>
-        <Link to='/new-news'>Add an News Article</Link>
+        <Link to='/new-news' className='add-button' >Add an News Article</Link>
       </div>
       <div>
         {news.map((news, key) => {

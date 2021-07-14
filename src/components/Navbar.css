@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav-item {
+  text-decoration: none;
+  color: black;
+}
+#header {
+  color: black;
+}
