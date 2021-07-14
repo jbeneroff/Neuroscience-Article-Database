@@ -47,6 +47,8 @@ NeuroLog is a react build which shows users a database of neuroscience-related r
 
 #### PostMVP
 
+- Requiring a password to delete articles
+- Search article list function
 - Add second Airtable with news
 - Add external API with large database of journal articles
 - Add voting system for article list page
