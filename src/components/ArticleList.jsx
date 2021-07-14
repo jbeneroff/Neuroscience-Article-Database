@@ -24,9 +24,9 @@ export default function ArticleList(article) {
 
   return (
     <div>
-      <div>
+      <button className='button'>
         <Link to='/new-article' className='add-button' >Add a Journal Article</Link>
-      </div>
+      </button>
       <div>
         {articles.map((article, key) => {
           return <ArticleCard key={article.id} article={article} />

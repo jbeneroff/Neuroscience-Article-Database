@@ -1,0 +1,39 @@
+#title {
+  margin: 7px 5px;
+  color: aliceblue;
+}
+
+#authors {
+  margin: 7px 5px;
+  color: aliceblue;
+}
+
+#abstract {
+  margin: 7px 5px;
+  color: aliceblue;
+}
+
+#read-more {
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.4s;
+  color: aliceblue;
+}
+
+#read-more:hover {
+  color: blue;
+}
+#delete-button {
+  margin: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  #title,
+  #authors,
+  #abstract {
+    margin: 10px 40px;
+  }
+  #abstract {
+    font-size: larger;
+  }
+}

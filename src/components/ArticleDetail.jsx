@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Loader from './Loader'
 import { BASE_URL, headers } from '../services'
+import './Detail.css'
 
 export default function ArticleDetail() {
 
@@ -32,12 +33,12 @@ export default function ArticleDetail() {
 
   return (
     <div>
-      <h2>{article.fields?.title}</h2>
-      <h3>{article.fields?.authors}</h3>
-      <p>{article.fields?.abstract}</p>
-      <a href={article.fields?.link}>Read More</a>
+      <h2 id='title'>{article.fields?.title}</h2>
+      <h3 id='authors'>{article.fields?.authors}</h3>
+      <p id='abstract'>{article.fields?.abstract}</p>
+      <a href={article.fields?.link} id='read-more'>Link to Article</a>
       <br />
-      <button onClick={handleDelete}>Delete Article</button>
+      <button id='delete-button' onClick={handleDelete}>Delete Article</button>
     </div>
   )
 }

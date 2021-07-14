@@ -5,9 +5,9 @@ import './List.css'
 export default function NewsCard(props) {
 
   return (
-    <Link to={`/news/${props.news.id}`} className='list-item'>
-      <div>
-        <h3>{props.news.fields.title}</h3>
+    <Link to={`/news/${props.news.id}`} className='list'>
+      <div className='article-div'>
+        <h3 className='hover-link' id='list-item'>{props.news.fields.title}</h3>
       </div>
     </Link>
   )

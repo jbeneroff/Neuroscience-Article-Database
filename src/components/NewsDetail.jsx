@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Loader from './Loader'
 import { headers } from '../services'
+import './Detail.css'
 
 const BASE_URL = `https://api.airtable.com/v0/appXNlhVJ6AfbKMdN/news`
 
@@ -34,11 +35,11 @@ export default function NewsDetail() {
 
   return (
     <div>
-      <h2>{news.fields?.title}</h2>
-      <p>{news.fields?.abstract}</p>
-      <a href={news.fields?.link}>Read More</a>
+      <h2 id='title'>{news.fields?.title}</h2>
+      <p id='abstract'>{news.fields?.abstract}</p>
+      <a href={news.fields?.link} id='read-more'>Link to Article</a>
       <br />
-      <button onClick={handleDelete}>Delete Article</button>
+      <button id='delete-button' onClick={handleDelete}>Delete Article</button>
     </div>
   )
 }
