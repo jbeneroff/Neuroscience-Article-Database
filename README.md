@@ -62,7 +62,7 @@ This schedule will be used to keep track of your progress throughout the week an
 | ---------- | ---------------------------------------------------- | ---------- |
 | July 12    | Prompt / Wireframes / Priority Matrix / Timeframes   | Complete   |
 | July 13    | Project Approval / Core Application Structure / Code | Complete   |
-| July 14    | Code / Initial Clickable Model / MVP                 | Incomplete |
+| July 14    | Code / Initial Clickable Model / MVP                 | Complete   |
 | July 15    | MVP                                                  | Incomplete |
 | July 16    | MVP / PMVP                                           | Incomplete |
 | July 17-19 | PMVP                                                 | Incomplete |
@@ -81,9 +81,10 @@ This schedule will be used to keep track of your progress throughout the week an
 | Forms                                  |    H     |      3hrs      |     1hrs      |    1hrs     |
 | Delete Function                        |    H     |      1hrs      |     1hrs      |    1hrs     |
 | Debugging                              |    H     |      4hrs      |     1hrs      |    1hrs     |
-| Basic CSS Component Styling            |    H     |      3hrs      |               |             |
-| Advanced CSS Styling                   |    H     |      6hrs      |               |             |
+| Basic CSS Component Styling            |    H     |      3hrs      |     3hrs      |             |
+| Advanced CSS Styling                   |    H     |      6hrs      |     3hrs      |             |
 | Adding Second Airtable w/ Component    |    H     |      3hrs      |     1hrs      |    1hrs     |
+| PMVP: Delete Requires Password         |    M     |      3hrs      |               |             |
 | PMVP: Voting System                    |    M     |      3hrs      |               |             |
 | PMVP: Adding External API w/ Component |    M     |      3hrs      |               |             |
 | Total                                  |    H     |      41rs      |               |             |
