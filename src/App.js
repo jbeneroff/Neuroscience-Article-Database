@@ -20,30 +20,32 @@ function App() {
 
 
   return (
-    <div className="App" id={darkMode ? "dark" : "light"}>
-      <Navbar />
+    <div className={`App ${darkMode ? "dark" : "light"}`}>
+      <Navbar darkMode={darkMode}/>
       <button id='mode-button' onClick={changeMode}>Change Theme</button>
-      <Route exact path='/'>
-        <HomePage />
-      </Route>
-      <Route path='/all-articles'>
-        <ArticleList />
-      </Route>
-      <Route path='/articles/:id'>
-        <ArticleDetail />
-      </Route>
-      <Route path='/new-article'>
-        <NewArticle />
-      </Route>
-      <Route path='/all-news'>
-        <NewsList />
-      </Route>
-      <Route path='/news/:id'>
-        <NewsDetail />
-      </Route>
-      <Route path='/new-news'>
-        <AddNews />
-      </Route>
+      <main>
+        <Route exact path='/'>
+          <HomePage />
+        </Route>
+        <Route path='/all-articles'>
+          <ArticleList />
+        </Route>
+        <Route path='/articles/:id'>
+          <ArticleDetail />
+        </Route>
+        <Route path='/new-article'>
+          <NewArticle />
+        </Route>
+        <Route path='/all-news'>
+          <NewsList />
+        </Route>
+        <Route path='/news/:id'>
+          <NewsDetail />
+        </Route>
+        <Route path='/new-news'>
+          <AddNews />
+        </Route>
+      </main>
       <Footer />
     </div>
   );

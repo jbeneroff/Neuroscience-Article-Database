@@ -11,13 +11,13 @@ a:hover {
 }
 .footer {
   width: 100%;
-  background-color: rgba(77, 170, 223, 0.8);
+  background-color: rgba(49, 49, 121, 0.564);
   font-size: 15px;
   align-items: center;
   display: flex;
   flex-direction: column;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
 }
 
 @media only screen and (min-width: 768px) {

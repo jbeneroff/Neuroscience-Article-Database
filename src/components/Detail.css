@@ -4,7 +4,7 @@
 }
 
 #title {
-  margin: 7px 5px;
+  margin: 0px 5px 7px 5px;
   color: aliceblue;
 }
 
@@ -33,10 +33,12 @@
 }
 
 @media only screen and (min-width: 768px) {
-  #title,
   #authors,
   #abstract {
     margin: 10px 40px;
+  }
+  #title {
+    margin: 0px 40px 10px 40px;
   }
   #abstract {
     font-size: larger;
