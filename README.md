@@ -58,16 +58,15 @@ NeuroLog is a react build which shows users a database of neuroscience-related r
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
-| Day        | Deliverable                                        | Status     |
-| ---------- | -------------------------------------------------- | ---------- |
-| July 12    | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
-| July 13    | Project Approval                                   | Complete   |
-| July 14    | Core Application Structure / Code                  | Complete   |
-| July 14    | Initial Clickable Model / MVP                      | Incomplete |
-| July 15    | MVP                                                | Incomplete |
-| July 16    | MVP / PMVP                                         | Incomplete |
-| July 17-19 | PMVP                                               | Incomplete |
-| July 20    | Presentations                                      | Incomplete |
+| Day        | Deliverable                                          | Status     |
+| ---------- | ---------------------------------------------------- | ---------- |
+| July 12    | Prompt / Wireframes / Priority Matrix / Timeframes   | Complete   |
+| July 13    | Project Approval / Core Application Structure / Code | Complete   |
+| July 14    | Code / Initial Clickable Model / MVP                 | Incomplete |
+| July 15    | MVP                                                  | Incomplete |
+| July 16    | MVP / PMVP                                           | Incomplete |
+| July 17-19 | PMVP                                                 | Incomplete |
+| July 20    | Presentations                                        | Incomplete |
 
 ## Timeframes
 
