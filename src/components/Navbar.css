@@ -4,6 +4,7 @@
   justify-content: space-around;
   background-color: rgba(49, 49, 121, 0.564);
   width: 100%;
+  margin-bottom: 20px;
 }
 .nav-item {
   text-decoration: none;

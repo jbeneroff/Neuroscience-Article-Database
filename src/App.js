@@ -1,5 +1,5 @@
 import { Route } from 'react-router-dom'
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './components/HomePage';
@@ -22,7 +22,6 @@ function App() {
   return (
     <div className={`App ${darkMode ? "dark" : "light"}`}>
       <Navbar darkMode={darkMode}/>
-      <button id='mode-button' onClick={changeMode}>Change Theme</button>
       <main>
         <Route exact path='/'>
           <HomePage />
@@ -46,6 +45,7 @@ function App() {
           <AddNews />
         </Route>
       </main>
+      <button id='mode-button' onClick={changeMode}>Change Theme</button>
       <Footer />
     </div>
   );
