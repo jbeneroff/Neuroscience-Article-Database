@@ -13,7 +13,7 @@ export default function NewsDetail() {
 
   const [news, setNews] = useState({})
   const { id } = useParams()
-  const history = useHistory()
+  // const history = useHistory()
   const [isOpen, setIsOpen] = useState(false);
  
   const togglePopup = () => {

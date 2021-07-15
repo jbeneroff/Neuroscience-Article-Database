@@ -8,7 +8,7 @@
 
 ## Project Description
 
-NeuroLog is a react build which shows users a database of neuroscience-related research articles. Users will be able to view current research, add new articles, and delete them. It will have a second Airtable with a popular news geared towards less science-inclined users. As a PMVP I will possibly add an external API with a larger databse of journal articles, a voting system for the article list page, and the delete button will also require a password.
+NeuroLog is a react build which shows users a database of neuroscience-related research articles. Users will be able to view current research, add new articles, and delete them. It will have a second Airtable with a popular news section geared towards less science-inclined users. As a PMVP I will possibly add an external API with a larger databsse of journal articles, a voting system for the article/news list pages, and the delete button will also require a password.
 
 ## Wireframes
 
@@ -81,12 +81,12 @@ This schedule will be used to keep track of your progress throughout the week an
 | Article Details Component              |    H     |      3hrs      |     1hrs      |    1hrs     |
 | Forms                                  |    H     |      3hrs      |     1hrs      |    1hrs     |
 | Delete Function                        |    H     |      1hrs      |     1hrs      |    1hrs     |
-| Debugging                              |    H     |      4hrs      |     1hrs      |    1hrs     |
+| Debugging                              |    H     |      4hrs      |     3hrs      |             |
 | Basic CSS Component Styling            |    H     |      3hrs      |     3hrs      |    3hrs     |
-| Advanced CSS Styling                   |    H     |      6hrs      |     6hrs      |             |
+| Advanced CSS Styling                   |    H     |      6hrs      |     6hrs      |    6hrs     |
 | Adding Second Airtable w/ Component    |    H     |      3hrs      |     1hrs      |    1hrs     |
 | PMVP: Light/Dark Mode                  |    M     |      3hrs      |     1hrs      |    1hrs     |
-| PMVP: Delete Requires Password         |    M     |      3hrs      |               |             |
+| PMVP: Delete Requires Password         |    M     |      3hrs      |     2hrs      |    2hrs     |
 | PMVP: Voting System                    |    M     |      3hrs      |               |             |
 | PMVP: Adding External API w/ Component |    M     |      3hrs      |               |             |
 | Total                                  |    H     |      41rs      |               |             |

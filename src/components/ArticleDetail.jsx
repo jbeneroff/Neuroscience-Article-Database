@@ -11,7 +11,7 @@ export default function ArticleDetail() {
 
   const [article, setArticle] = useState({})
   const { id } = useParams()
-  const history = useHistory()
+  // const history = useHistory()
   const [isOpen, setIsOpen] = useState(false);
  
   const togglePopup = () => {
@@ -53,9 +53,6 @@ export default function ArticleDetail() {
         {isOpen && <DeleteButton
           content={
             <div>
-              {/* <p>Are you sure you want to delete this article?</p>
-              <p>This cannot be undone.</p> */}
-              {/* <button id='delete-button-popup' onClick={handleDelete}>Delete Article</button> */}
             </div>}
           handleClose={togglePopup}/>}
       </div>

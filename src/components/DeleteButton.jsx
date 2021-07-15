@@ -39,6 +39,8 @@ export default function DeleteButton(props) {
       <div className="box">
         <span className="close-icon" onClick={props.handleClose}>x</span>
         <form>
+          <p>Are you sure you want to delete this article?</p>
+          <p>This cannot be undone.</p>
           <label>Password</label>
           <input onChange={(e) => handlePassword(e)} type="password" placeholder="password" />
           <button id='delete-button-popup' onClick={(e) => handleSubmit(e)} >Delete Article</button>
