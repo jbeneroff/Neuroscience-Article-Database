@@ -5,12 +5,18 @@ import axios from 'axios'
 import Loader from './Loader'
 import { BASE_URL, headers } from '../services'
 import './Detail.css'
+import DeleteButton from './DeleteButton'
 
 export default function ArticleDetail() {
 
   const [article, setArticle] = useState({})
   const { id } = useParams()
   const history = useHistory()
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
 
   useEffect(() => {
     const fetchArticle = async () => {
@@ -38,7 +44,21 @@ export default function ArticleDetail() {
       <p id='abstract'>{article.fields?.abstract}</p>
       <a href={article.fields?.link} id='read-more'>Link to Article</a>
       <br />
-      <button id='delete-button' onClick={handleDelete}>Delete Article</button>
+      <div>
+        <input
+          type="button"
+          value="Delete Article"
+          onClick={togglePopup}/>
+        {isOpen && <DeleteButton
+          content={
+            <div>
+              <p>Are you sure you want to delete this article?</p>
+              <p>This cannot be undone.</p>
+              <button id='delete-button' onClick={handleDelete}>Delete Article</button>
+            </div>}
+          handleClose={togglePopup}/>}
+      </div>
+      
     </div>
   )
 }

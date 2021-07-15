@@ -5,7 +5,7 @@ import './HomePage.css'
 
 const slideImages = [
   'https://www.york.ac.uk/media/study/courses/postgraduate/psychology/newpgcoursepages/msccognitiveneuroscience/cognitive%20neuroscience%20banner.jpg',
-  'https://www.oxy.edu/sites/default/files/styles/banner_image/public/landing-page/banner-images/neuroscience_main_1440x800.jpg?itok=2w8RQm2a',
+  'https://media-exp3.licdn.com/dms/image/C561BAQEykMZPb5BbaQ/company-background_10000/0/1559024542521?e=2159024400&v=beta&t=0uLRL4gMe9YJNzkQgWu3LnlF6fO-W_eBRNBhAIWjKuA',
   'https://lpsonline.sas.upenn.edu/sites/default/files/2019-04/lpso-subject-area-neuroscience.jpg'
 ];
 

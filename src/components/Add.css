@@ -16,8 +16,21 @@ input {
 }
 
 #add-button {
-  margin: 10px;
-  /* background-color: rgb(128, 161, 243); */
+  background-color: rgba(49, 49, 121, 0.9);
+  border: none;
+  border-radius: 10;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+#add-button:hover {
+  background-color: white;
+  color: rgba(49, 49, 121, 0.9);
 }
 
 .add {
