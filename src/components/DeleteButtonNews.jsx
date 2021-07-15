@@ -6,9 +6,10 @@ import {useParams, useHistory}  from 'react-router-dom'
 import './DeleteButton.css'
 
 export default function DeleteButton(props) {
-  const [password, setPassword] = useState(true)
+  const [password, setPassword] = useState('')
   const { id } = useParams()
   const history = useHistory()
+  const [passwordMessage, setPasswordMessage] = useState('This cannot be undone.')
 
   const handlePassword = (e) =>  {
     setPassword(e.target.value)
@@ -22,10 +23,9 @@ export default function DeleteButton(props) {
   const checkValidity = () => {
     if (password === 'jared') {
       handleDelete()
-      console.log('its right')
     } else {
-      console.log('its wrong')
-      alert('Incorrect Password. Please Try again.')
+      setPasswordMessage('Incorrect Password. Please try again.')
+      setPassword('')
     }
   }
 
@@ -41,9 +41,9 @@ export default function DeleteButton(props) {
         <span className="close-icon" onClick={props.handleClose}>x</span>
         <form>
           <p>Are you sure you want to delete this article?</p>
-          <p>This cannot be undone.</p>
+          <p>{passwordMessage}</p>
           <label>Password</label>
-          <input onChange={(e) => handlePassword(e)} type="password" placeholder="password" />
+          <input value={password} onChange={(e) => handlePassword(e)} type="password" placeholder="password" />
           <button id='delete-button-popup' onClick={(e) => handleSubmit(e)} >Delete Article</button>
         </form>
         {props.content}

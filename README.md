@@ -48,12 +48,12 @@ NeuroLog is a react build which shows users a database of neuroscience-related r
 
 #### PostMVP
 
+- Light and Dark mode
 - Requiring a password to delete articles
 - Search article list function
 - Add external API with large database of journal articles
 - Add voting system for article list page
 - Make it look really good
-- Light and Dark mode
 
 ## Project Schedule
 
@@ -86,10 +86,10 @@ This schedule will be used to keep track of your progress throughout the week an
 | Advanced CSS Styling                   |    H     |      6hrs      |     6hrs      |    6hrs     |
 | Adding Second Airtable w/ Component    |    H     |      3hrs      |     1hrs      |    1hrs     |
 | PMVP: Light/Dark Mode                  |    M     |      3hrs      |     1hrs      |    1hrs     |
-| PMVP: Delete Requires Password         |    M     |      3hrs      |     2hrs      |    2hrs     |
+| PMVP: Delete Requires Password         |    M     |      3hrs      |     3hrs      |    3hrs     |
 | PMVP: Voting System                    |    M     |      3hrs      |               |             |
 | PMVP: Adding External API w/ Component |    M     |      3hrs      |               |             |
-| Total                                  |    H     |      41rs      |               |             |
+| Total                                  |    H     |     47hrs      |               |             |
 
 ## SWOT Analysis
 

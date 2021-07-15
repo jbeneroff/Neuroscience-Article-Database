@@ -25,15 +25,27 @@ main {
 #mode-button {
   width: 100px;
   margin-left: 1px;
+  background-color: rgba(72, 72, 123, 0.803);
+  border-radius: 5px;
+  color: white;
+  padding: 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  transition: 0.4s;
+}
+
+#mode-button:hover {
+  background-color: white;
+  color: rgba(72, 72, 123, 1);
 }
 
 .dark {
-  background-image: url("https://b2bm.s3.amazonaws.com/styles/default_image/s3/istock-1186776186_edited.jpg?itok=kOcJfvtN");
-  /* background-image: url("https://www.york.ac.uk/media/study/courses/postgraduate/psychology/newpgcoursepages/msccognitiveneuroscience/cognitive%20neuroscience%20banner.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://b2bm.s3.amazonaws.com/styles/default_image/s3/istock-1186776186_edited.jpg?itok=kOcJfvtN");
 }
 
 .light {
-  /* background-image: url("https://3718aeafc638f96f5bd6-d4a9ca15fc46ba40e71f94dec0aad28c.ssl.cf1.rackcdn.com/journal-homepage-image-behavioral-neuroscience-archive.png"); */
   background-image: url("https://freepngimg.com/thumb/leaf/85025-brain-circle-leaf-human-neuroscience-png-free-photo.png");
-  /* background-size: 75%; */
 }
