@@ -29,11 +29,11 @@ export default function NewsDetail() {
     fetchNews()
   }, [id])
 
-  const handleDelete = async () => {
-    const URL = `${BASE_URL}/${id}`
-    await axios.delete(URL, {headers})
-    history.push('/all-news')
-  }
+  // const handleDelete = async () => {
+  //   const URL = `${BASE_URL}/${id}`
+  //   await axios.delete(URL, {headers})
+  //   history.push('/all-news')
+  // }
 
   if (!news.fields) {
     return <Loader />
@@ -54,9 +54,9 @@ export default function NewsDetail() {
         {isOpen && <DeleteButton
           content={
             <div>
-              <p>Are you sure you want to delete this article?</p>
+              {/* <p>Are you sure you want to delete this article?</p>
               <p>This cannot be undone.</p>
-              <button id='delete-button-popup' onClick={handleDelete}>Delete Article</button>
+              <button id='delete-button-popup' onClick={handleDelete}>Delete Article</button> */}
             </div>}
           handleClose={togglePopup}/>}
       </div>

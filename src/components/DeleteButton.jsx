@@ -21,9 +21,10 @@ export default function DeleteButton(props) {
 
   const checkValidity = () => {
     if (password === 'jared') {
-        setPassword(true)
+      handleDelete()
+      console.log('its right')
     } else {
-      setPassword(false)
+      console.log('its wrong')
     }
   }
 
@@ -40,7 +41,7 @@ export default function DeleteButton(props) {
         <form>
           <label>Password</label>
           <input onChange={(e) => handlePassword(e)} type="password" placeholder="password" />
-          <button id='delete-button-popup' onClick={(e) => handleSubmit(e)} onClick={handleDelete}>Delete Article</button>
+          <button id='delete-button-popup' onClick={(e) => handleSubmit(e)} >Delete Article</button>
         </form>
         {props.content}
       </div>
