@@ -27,11 +27,11 @@ export default function ArticleDetail() {
     fetchArticle()
   }, [id])
 
-  const handleDelete = async () => {
-    const URL = `${BASE_URL}/${id}`
-    await axios.delete(URL, {headers})
-    history.push('/all-articles')
-  }
+  // const handleDelete = async () => {
+  //   const URL = `${BASE_URL}/${id}`
+  //   await axios.delete(URL, {headers})
+  //   history.push('/all-articles')
+  // }
 
   if (!article.fields) {
     return <Loader />
@@ -46,19 +46,19 @@ export default function ArticleDetail() {
       <br />
       <div>
         <input
+          id='delete-button'
           type="button"
           value="Delete Article"
           onClick={togglePopup}/>
         {isOpen && <DeleteButton
           content={
             <div>
-              <p>Are you sure you want to delete this article?</p>
-              <p>This cannot be undone.</p>
-              <button id='delete-button' onClick={handleDelete}>Delete Article</button>
+              {/* <p>Are you sure you want to delete this article?</p>
+              <p>This cannot be undone.</p> */}
+              {/* <button id='delete-button-popup' onClick={handleDelete}>Delete Article</button> */}
             </div>}
           handleClose={togglePopup}/>}
       </div>
-      
     </div>
   )
 }

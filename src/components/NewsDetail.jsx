@@ -5,6 +5,7 @@ import axios from 'axios'
 import Loader from './Loader'
 import { headers } from '../services'
 import './Detail.css'
+import DeleteButton from './DeleteButton'
 
 const BASE_URL = `https://api.airtable.com/v0/appXNlhVJ6AfbKMdN/news`
 
@@ -13,6 +14,11 @@ export default function NewsDetail() {
   const [news, setNews] = useState({})
   const { id } = useParams()
   const history = useHistory()
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -39,7 +45,21 @@ export default function NewsDetail() {
       <p id='abstract'>{news.fields?.abstract}</p>
       <a href={news.fields?.link} id='read-more'>Link to Article</a>
       <br />
-      <button id='delete-button' onClick={handleDelete}>Delete Article</button>
+      <div>
+        <input
+          id='delete-button'
+          type="button"
+          value="Delete Article"
+          onClick={togglePopup}/>
+        {isOpen && <DeleteButton
+          content={
+            <div>
+              <p>Are you sure you want to delete this article?</p>
+              <p>This cannot be undone.</p>
+              <button id='delete-button-popup' onClick={handleDelete}>Delete Article</button>
+            </div>}
+          handleClose={togglePopup}/>}
+      </div>
     </div>
   )
 }
