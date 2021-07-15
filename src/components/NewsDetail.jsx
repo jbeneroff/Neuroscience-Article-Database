@@ -12,7 +12,6 @@ export default function NewsDetail() {
 
   const [news, setNews] = useState({})
   const { id } = useParams()
-  // const history = useHistory()
   const [isOpen, setIsOpen] = useState(false);
  
   const togglePopup = () => {
@@ -27,12 +26,6 @@ export default function NewsDetail() {
     }
     fetchNews()
   }, [id])
-
-  // const handleDelete = async () => {
-  //   const URL = `${BASE_URL}/${id}`
-  //   await axios.delete(URL, {headers})
-  //   history.push('/all-news')
-  // }
 
   if (!news.fields) {
     return <Loader />
@@ -51,12 +44,7 @@ export default function NewsDetail() {
           value="Delete Article"
           onClick={togglePopup}/>
         {isOpen && <DeleteButtonNews
-          content={
-            <div>
-              {/* <p>Are you sure you want to delete this article?</p>
-              <p>This cannot be undone.</p>
-              <button id='delete-button-popup' onClick={handleDelete}>Delete Article</button> */}
-            </div>}
+          content={<div></div>}
           handleClose={togglePopup}/>}
       </div>
     </div>

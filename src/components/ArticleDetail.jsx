@@ -11,7 +11,6 @@ export default function ArticleDetail() {
 
   const [article, setArticle] = useState({})
   const { id } = useParams()
-  // const history = useHistory()
   const [isOpen, setIsOpen] = useState(false);
  
   const togglePopup = () => {
@@ -26,12 +25,6 @@ export default function ArticleDetail() {
     }
     fetchArticle()
   }, [id])
-
-  // const handleDelete = async () => {
-  //   const URL = `${BASE_URL}/${id}`
-  //   await axios.delete(URL, {headers})
-  //   history.push('/all-articles')
-  // }
 
   if (!article.fields) {
     return <Loader />
@@ -51,9 +44,7 @@ export default function ArticleDetail() {
           value="Delete Article"
           onClick={togglePopup}/>
         {isOpen && <DeleteButton
-          content={
-            <div>
-            </div>}
+          content={<div></div>}
           handleClose={togglePopup}/>}
       </div>
     </div>
