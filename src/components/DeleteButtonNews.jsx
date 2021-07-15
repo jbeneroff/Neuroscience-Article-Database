@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { useState } from 'react'
-import { BASE_URL, headers } from '../services'
+import { BASE_URL_2, headers } from '../services'
 import {useParams, useHistory}  from 'react-router-dom'
 import './DeleteButton.css'
 
@@ -30,9 +30,9 @@ export default function DeleteButton(props) {
   }
 
   const handleDelete = async () => {
-    const URL = `${BASE_URL}/${id}`
+    const URL = `${BASE_URL_2}/${id}`
     await axios.delete(URL, {headers})
-    history.push('/all-articles')
+    history.push('/all-news')
   }
 
   return (
@@ -51,5 +51,3 @@ export default function DeleteButton(props) {
     </div>
   );
 }
-
-// https://www.cluemediator.com/create-simple-popup-in-reactjs

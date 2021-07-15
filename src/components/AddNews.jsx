@@ -1,10 +1,8 @@
 import { useState } from "react"
 import axios from "axios"
-import { headers } from "../services"
+import { BASE_URL_2, headers } from "../services"
 import { useHistory } from 'react-router'
 import './Add.css'
-
-const BASE_URL = `https://api.airtable.com/v0/appXNlhVJ6AfbKMdN/news`
 
 const defaultForm = {
   title: "",
@@ -26,7 +24,7 @@ export default function AddNews() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await axios.post(BASE_URL, { fields: input }, { headers })
+    const res = await axios.post(BASE_URL_2, { fields: input }, { headers })
     console.log(res)
     history.push(`/news/${res.data.id}`)
   }

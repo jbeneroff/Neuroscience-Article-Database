@@ -1,13 +1,12 @@
 import React from 'react'
-import {useParams, useHistory}  from 'react-router-dom'
+import {useParams}  from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Loader from './Loader'
-import { headers } from '../services'
+import { BASE_URL_2, headers } from '../services'
 import './Detail.css'
-import DeleteButton from './DeleteButton'
+import DeleteButtonNews from './DeleteButtonNews'
 
-const BASE_URL = `https://api.airtable.com/v0/appXNlhVJ6AfbKMdN/news`
 
 export default function NewsDetail() {
 
@@ -22,7 +21,7 @@ export default function NewsDetail() {
 
   useEffect(() => {
     const fetchNews = async () => {
-      const URL = `${BASE_URL}/${id}`
+      const URL = `${BASE_URL_2}/${id}`
       const res = await axios.get(URL, { headers })
       setNews(res.data)
     }
@@ -51,7 +50,7 @@ export default function NewsDetail() {
           type="button"
           value="Delete Article"
           onClick={togglePopup}/>
-        {isOpen && <DeleteButton
+        {isOpen && <DeleteButtonNews
           content={
             <div>
               {/* <p>Are you sure you want to delete this article?</p>
