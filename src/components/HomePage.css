@@ -2,3 +2,21 @@
   background-color: rgba(49, 49, 121, 0.564);
   border-radius: 10px;
 }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 65vh;
+  border-radius: 20px;
+  margin: 0px 50px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: rgba(49, 49, 121, 0.564);
+  text-align: center;
+  border-radius: 10px;
+}
