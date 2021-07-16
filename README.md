@@ -86,7 +86,7 @@ This schedule will be used to keep track of your progress throughout the week an
 | Advanced CSS Styling                   |    H     |      6hrs      |     6hrs      |    6hrs     |
 | Adding Second Airtable w/ Component    |    H     |      3hrs      |     1hrs      |    1hrs     |
 | PMVP: Light/Dark Mode                  |    M     |      3hrs      |     1hrs      |    1hrs     |
-| PMVP: Search                           |    M     |      3hrs      |     2hrs      |    2hrs     |
+| PMVP: Live Search                      |    M     |      3hrs      |     3hrs      |    3hrs     |
 | PMVP: Delete Requires Password         |    M     |      3hrs      |     3hrs      |    3hrs     |
 | PMVP: Voting System                    |    M     |      3hrs      |     0hrs      |    0hrs     |
 | PMVP: Adding External API w/ Component |    M     |      3hrs      |     0hrs      |    0hrs     |

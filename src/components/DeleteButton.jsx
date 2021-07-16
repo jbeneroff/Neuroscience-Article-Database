@@ -42,8 +42,8 @@ export default function DeleteButton(props) {
         <form>
           <p>Are you sure you want to delete this article?</p>
           <p>{passwordMessage}</p>
-          <label>Password</label>
-          <input value={password} onChange={(e) => handlePassword(e)} type="password" placeholder="password" />
+          <label>Enter Password</label>
+          <input value={password} onChange={(e) => handlePassword(e)} type="password" placeholder="Password" />
           <button id='delete-button-popup' onClick={(e) => handleSubmit(e)} >Delete Article</button>
         </form>
         {props.content}

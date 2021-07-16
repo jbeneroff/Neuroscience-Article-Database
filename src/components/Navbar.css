@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
   padding: 5px;
@@ -19,7 +20,8 @@
   color: aliceblue;
   margin: 10px;
   text-decoration: underline;
-  align-items: flex-start;
+  font-family: "Ubuntu", sans-serif;
+  /* align-self: flex-start; */
 }
 
 .light-header {
@@ -27,7 +29,8 @@
   color: rgba(49, 49, 121, 1);
   margin: 10px;
   text-decoration: underline;
-  align-items: flex-start;
+  font-family: "Ubuntu", sans-serif;
+  /* align-self: flex-start; */
 }
 
 .dropbtn {
@@ -38,6 +41,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  /* align-self: flex-end; */
 }
 
 .dropdown {

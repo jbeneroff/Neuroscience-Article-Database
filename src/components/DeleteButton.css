@@ -57,3 +57,7 @@
   background-color: white;
   color: rgba(49, 49, 121, 0.9);
 }
+
+#delete-button-popup {
+  margin-top: 5px;
+}

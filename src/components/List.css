@@ -15,6 +15,11 @@
   color: rgba(49, 49, 121, 0.9);
 }
 
+#search {
+  border-radius: 5px;
+  /* align-self: flex-end; */
+}
+
 #list-div {
   background-color: rgba(49, 49, 121, 0.564);
   border-radius: 10px;
