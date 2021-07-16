@@ -21,12 +21,13 @@ export default function ArticleList() {
   }, [])
 
   const handleSearch = (e) => {
-    let input = e.target.value
+    let input = e.target.value.toLowerCase()
     let result = []
     console.log(input)
     result = articles.filter((data) => {
       return data.fields.title.search(input) !== -1
     })
+    console.log(result)
     setFilteredData(result)
   }
 
@@ -36,8 +37,7 @@ export default function ArticleList() {
 
   return (
     <div>
-      <label>Search</label>
-      <input type="text" onChange={(e) => handleSearch(e)} />
+      <input id='search' type="text" placeholder='Search' onChange={(e) => handleSearch(e)} />
       <div id='list-div'>
         {filteredData.map((article, key) => {
           return <ArticleCard key={article.id} article={article} />
