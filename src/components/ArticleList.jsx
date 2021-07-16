@@ -10,6 +10,7 @@ import './List.css'
 export default function ArticleList() {
   const [articles, setArticles] = useState([])
   const [filteredData, setFilteredData] = useState(articles)
+  const [title, setTitle] = useState('')
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -20,28 +21,28 @@ export default function ArticleList() {
     fetchArticles()
   }, [])
 
-  const handleSearch = (e) => {
-    let input = e.target.value.toLowerCase()
-    let result = []
-    console.log(input)
-    result = articles.filter((data) => {
-      return data.fields.title.search(input) !== -1
+  const handleSearch = () => {
+    const result = articles.filter((data) => {
+      return (data.fields.title.toLowerCase().includes(title.toLowerCase()))
     })
-    console.log(result)
     setFilteredData(result)
   }
 
+  const matches = filteredData.filter((item) => item.fields.title.toLowerCase().includes(title.toLowerCase()))
+  
   if (articles.length === 0) {
     return <Loader />
   }
 
   return (
     <div>
-      <input id='search' type="text" placeholder='Search' onChange={(e) => handleSearch(e)} />
+      <form onSubmit={handleSearch}>
+        <input value={title} id='search' type="text" placeholder='Search' onChange={(e) => setTitle(e.target.value)} />
+      </form>
       <div id='list-div'>
-        {filteredData.map((article, key) => {
+        {matches.map((article, key) => {
           return <ArticleCard key={article.id} article={article} />
-          })}
+        })}
       </div>
       <button className='button'>
         <Link to='/new-article' className='add-button' >Add a Journal Article</Link>

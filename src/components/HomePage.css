@@ -33,6 +33,6 @@
 @media only screen and (min-width: 768px) {
   #featured {
     justify-content: flex-start;
-    margin-left: 50px;
+    margin-left: 55px;
   }
 }

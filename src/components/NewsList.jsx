@@ -11,6 +11,7 @@ import './List.css'
 export default function NewsList() {
   const [news, setNews] = useState([])
   const [filteredData, setFilteredData] = useState(news)
+  const [title, setTitle] = useState('')
 
   useEffect(() => {
     const fetchNews = async () => {
@@ -21,15 +22,14 @@ export default function NewsList() {
     fetchNews()
   }, [])
 
-  const handleSearch = (e) => {
-    let input = e.target.value
-    let result = []
-    console.log(input)
-    result = news.filter((data) => {
-      return data.fields.title.search(input) !== -1
+  const handleSearch = () => {
+    const result = news.filter((data) => {
+      return (data.fields.title.toLowerCase().includes(title.toLowerCase()))
     })
     setFilteredData(result)
   }
+
+  const matches = filteredData.filter((item) => item.fields.title.toLowerCase().includes(title.toLowerCase()))
 
   if (news.length === 0) {
     return <Loader />
@@ -37,9 +37,11 @@ export default function NewsList() {
 
   return (
     <div>
-      <input id='search' type="text" placeholder='Search' onChange={(e) => handleSearch(e)} />
+      <form onSubmit={handleSearch}>
+        <input value={title} id='search' type="text" placeholder='Search' onChange={(e) => setTitle(e.target.value)} />
+      </form>
       <div id='list-div'>
-        {filteredData.map((news, key) => {
+        {matches.map((news, key) => {
           return <NewsCard key={news.id} news={news} />
           })}
       </div>
