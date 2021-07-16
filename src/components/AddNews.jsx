@@ -31,7 +31,7 @@ export default function AddNews() {
 
   return (
     <div className='add'>
-      <h3>Add a News Article</h3>
+      <h3 id='add-header'>Add a News Article</h3>
       <form onSubmit={handleSubmit}>
         <label>Title</label>
         <input name="title" value={input.title} onChange={handleChange} />

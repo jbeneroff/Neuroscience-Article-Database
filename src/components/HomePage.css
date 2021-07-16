@@ -7,7 +7,7 @@
   color: rgba(49, 49, 121, 1);
 }
 
-h2 {
+#featured {
   display: flex;
   justify-content: center;
 }
@@ -31,7 +31,7 @@ h2 {
 }
 
 @media only screen and (min-width: 768px) {
-  h2 {
+  #featured {
     justify-content: flex-start;
     margin-left: 50px;
   }

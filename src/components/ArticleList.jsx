@@ -7,25 +7,39 @@ import ArticleCard from './ArticleCard'
 import { Link } from 'react-router-dom'
 import './List.css'
 
-export default function ArticleList(article) {
+export default function ArticleList() {
   const [articles, setArticles] = useState([])
+  const [filteredData, setFilteredData] = useState(articles)
 
   useEffect(() => {
     const fetchArticles = async () => {
       const res = await axios.get(BASE_URL, { headers })
       setArticles(res.data.records)
+      setFilteredData(res.data.records)
     }
     fetchArticles()
   }, [])
+
+  const handleSearch = (e) => {
+    let input = e.target.value
+    let result = []
+    console.log(input)
+    result = articles.filter((data) => {
+      return data.fields.title.search(input) !== -1
+    })
+    setFilteredData(result)
+  }
 
   if (articles.length === 0) {
     return <Loader />
   }
 
   return (
-    <div > 
+    <div>
+      <label>Search</label>
+      <input type="text" onChange={(e) => handleSearch(e)} />
       <div id='list-div'>
-        {articles.map((article, key) => {
+        {filteredData.map((article, key) => {
           return <ArticleCard key={article.id} article={article} />
           })}
       </div>

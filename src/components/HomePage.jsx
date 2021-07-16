@@ -8,7 +8,7 @@ export default function HomePage(props) {
     <div className={`home ${props.darkMode ? "dark-home" : "light-home"}`}>
       {/* <h2>Welcome to your link to the newest and most interesting neuroscience research and news.</h2> */}
       <br />
-      <h2>Featured Articles</h2>
+      <h2 id='featured'>Featured Articles</h2>
       <br />
       <div>
         <Slideshow />

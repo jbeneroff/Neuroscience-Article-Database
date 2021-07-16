@@ -33,7 +33,7 @@ export default function NewArticle() {
 
   return (
     <div className='add'>
-      <h3>Add a New Article</h3>
+      <h3 id='add-header'>Add a New Article</h3>
       <form onSubmit={handleSubmit}>
         <label>Title</label>
         <input name="title" value={input.title} onChange={handleChange} />
