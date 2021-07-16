@@ -16,21 +16,21 @@ const Slideshow = () => {
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
               <span>
-                <a href="https://www.jneurosci.org/">Journal of Neuroscience</a>
+                <a href="https://www.jneurosci.org/content/early/2021/06/18/JNEUROSCI.3157-20.2021?utm_source=JN&utm_medium=Webpage&utm_campaign=Most_Discussed">Human Hippocampal Neurons Track Moments in a Sequence of Events</a>
               </span>
             </div>
           </div>
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
               <span>
-              <a href="https://neurosciencenews.com/">Neuroscience News</a>
+              <a href="https://www.jneurosci.org/content/early/2021/06/03/JNEUROSCI.0391-21.2021?utm_source=JN&utm_medium=Webpage&utm_campaign=Most_Discussed">Visual Recognition is Heralded by Shifts in Local Field Potential Oscillations and Inhibitory Networks in Primary Visual Cortex</a>
               </span>
             </div>
           </div>
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
               <span>
-              <a href="https://www.sfn.org/">Society for Neuroscience</a>
+              <a href="https://www.jneurosci.org/content/early/2021/06/15/JNEUROSCI.0278-21.2021?utm_source=JN&utm_medium=Webpage&utm_campaign=Most_Discussed">Distinct Neurophysiological Correlates of the fMRI BOLD Signal in the Hippocampus and Neocortex</a>
               </span>
             </div>
           </div>
