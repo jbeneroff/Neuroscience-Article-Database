@@ -24,7 +24,7 @@ function App() {
       <Navbar darkMode={darkMode}/>
       <main>
         <Route exact path='/'>
-          <HomePage />
+          <HomePage darkMode={darkMode}/>
         </Route>
         <Route path='/all-articles'>
           <ArticleList />

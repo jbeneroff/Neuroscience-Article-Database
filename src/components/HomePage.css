@@ -1,6 +1,15 @@
-.home {
+.dark-home {
   background-color: rgba(49, 49, 121, 0.564);
   border-radius: 10px;
+}
+
+.light-home {
+  color: rgba(49, 49, 121, 1);
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
 }
 
 .each-slide > div {
@@ -19,4 +28,11 @@
   background: rgba(49, 49, 121, 0.75);
   text-align: center;
   border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
 }
