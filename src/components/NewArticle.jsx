@@ -26,7 +26,6 @@ export default function NewArticle() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await axios.post(BASE_URL, { fields: input }, { headers })
-    console.log(res)
     history.push(`/articles/${res.data.id}`)
   }
 

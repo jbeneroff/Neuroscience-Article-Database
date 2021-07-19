@@ -25,7 +25,6 @@ export default function AddNews() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await axios.post(BASE_URL_2, { fields: input }, { headers })
-    console.log(res)
     history.push(`/news/${res.data.id}`)
   }
 
