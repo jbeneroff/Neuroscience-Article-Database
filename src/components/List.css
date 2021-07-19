@@ -17,7 +17,6 @@
 
 #search {
   border-radius: 5px;
-  /* align-self: flex-end; */
 }
 
 #list-div {
@@ -30,7 +29,6 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  /* color: black; */
   justify-content: center;
 }
 
@@ -40,10 +38,8 @@
 
 #list-item {
   color: aliceblue;
-  /* color: black; */
   display: flex;
   border-radius: 10px;
-  /* background-color: rgba(77, 170, 223, 0.8); */
   margin: 20px 10px;
   justify-content: center;
   padding: 5px;
@@ -55,6 +51,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 @media only screen and (min-width: 768px) {
   #list-item {
     margin: 20px 50px;

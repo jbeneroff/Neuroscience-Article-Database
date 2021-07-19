@@ -1,12 +1,11 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { useState, useEffect } from 'react'
 import { BASE_URL_2, headers } from '../services'
+import { Link } from 'react-router-dom'
 import Loader from './Loader'
 import NewsCard from './NewsCard'
-import { Link } from 'react-router-dom'
 import './List.css'
-
 
 export default function NewsList() {
   const [news, setNews] = useState([])

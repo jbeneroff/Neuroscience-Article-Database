@@ -66,7 +66,7 @@ This schedule will be used to keep track of your progress throughout the week an
 | July 14    | Code / Initial Clickable Model / MVP                 | Complete   |
 | July 15    | MVP                                                  | Complete   |
 | July 16    | MVP / PMVP                                           | Complete   |
-| July 17-19 | PMVP                                                 | Incomplete |
+| July 17-19 | PMVP                                                 | Complete   |
 | July 20    | Presentations                                        | Incomplete |
 
 ## Timeframes
@@ -90,7 +90,7 @@ This schedule will be used to keep track of your progress throughout the week an
 | PMVP: Delete Requires Password         |    M     |      3hrs      |     3hrs      |    3hrs     |
 | PMVP: Voting System                    |    M     |      3hrs      |     0hrs      |    0hrs     |
 | PMVP: Adding External API w/ Component |    M     |      3hrs      |     0hrs      |    0hrs     |
-| Total                                  |    H     |     47hrs      |      hrs      |     hrs     |
+| Total                                  |    H     |     47hrs      |     34hrs     |    34hrs    |
 
 ## SWOT Analysis
 

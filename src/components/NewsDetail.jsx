@@ -1,12 +1,11 @@
 import React from 'react'
+import axios from 'axios'
 import {useParams}  from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import axios from 'axios'
-import Loader from './Loader'
 import { BASE_URL_2, headers } from '../services'
-import './Detail.css'
+import Loader from './Loader'
 import DeleteButtonNews from './DeleteButtonNews'
-
+import './Detail.css'
 
 export default function NewsDetail() {
 
