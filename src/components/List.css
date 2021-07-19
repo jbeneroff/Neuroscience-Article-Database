@@ -1,6 +1,7 @@
-.add-button {
+.button {
   background-color: rgba(49, 49, 121, 0.9);
-  border: none;
+  border: 0px;
+  border-radius: 10px;
   color: white;
   padding: 12px 20px;
   text-align: center;
@@ -10,7 +11,7 @@
   transition-duration: 0.4s;
 }
 
-.add-button:hover {
+.button:hover {
   background-color: white;
   color: rgba(49, 49, 121, 0.9);
 }
