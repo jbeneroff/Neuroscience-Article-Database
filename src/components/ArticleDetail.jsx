@@ -1,11 +1,11 @@
 import React from 'react'
 import {useParams}  from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import { BASE_URL, headers } from '../services'
 import axios from 'axios'
 import Loader from './Loader'
-import { BASE_URL, headers } from '../services'
-import './Detail.css'
 import DeleteButton from './DeleteButton'
+import './Detail.css'
 
 export default function ArticleDetail() {
 
