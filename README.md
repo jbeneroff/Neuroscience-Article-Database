@@ -4,7 +4,7 @@
 
 ## NeuroLog
 
-[NeuroLog Website](URL)
+[NeuroLog Website](https://elegant-archimedes-c68a8e.netlify.app)
 
 ## Project Description
 
