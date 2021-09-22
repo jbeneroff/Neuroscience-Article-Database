@@ -4,7 +4,7 @@
 
 ## NeuroLog
 
-[NeuroLog Website](URL)
+[NeuroLog Website](https://neurolog.netlify.app/)
 
 ## Project Description
 
